@@ -1,240 +1,318 @@
-﻿        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Libre Franklin', sans-serif;
-        }
-        p {
-             color: #6c6c6c;
-             font-size: 14px;
-         }
-         
-        .h2 {
-            font-family: Pacifico, sans-serif;
-        }
-
-        .marginemin {
-            margin-top: -17px;
-        }
-        .marginemin1 {
-            margin-bottom: -17px;
-        }
-        .canvasbu {
-    border: none;
+﻿* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-        .circle {
-            border-radius: 200px 200px;
-        }
-        .marginimg{
-            margin-top:-100px;
 
-            width:250px;
-            height:470px;
-            z-index:20000;
-        }
-        .viewanchor{
-            color:black !important;
-        }
-        .viewanchor:hover{
-            color:#090909;
-        }
-         h4 {
-            font-size: 13px;
-            line-height: 23px;
-            font-weight: 600;
-            letter-spacing: 1px;
-        }
-         a i {
-            color: #6c6c6c;
-            font-size: 20px;
-        }
-        .tst {
-                background-color: #f5f5f5;
-                height: 220px;
-            }
-         .display {
-             display: inline-block;
-             width: 32px;
-             height: 32px;
-             line-height:28px;
-             border: 1px solid #dfdfdf;
-         }
+body {
+  /* font-family: 'Libre Franklin', sans-serif; */
+  font-family: "Times New Roman", Times, serif;
+}
+p {
+  color: #6c6c6c;
+  font-size: 14px;
+}
 
-         .display:hover {
-              border: 1px solid #752b2c;
-         }
+.h2 {
+  /* font-family: Pacifico, sans-serif; */
+  /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif */
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    font-family: 'Courier New', Courier, monospace;
+}
 
-         .display:hover i {
-             color: black;
-             font-weight: bold;
-         }
+.marginemin {
+  margin-top: -17px;
+}
+.marginemin1 {
+  margin-bottom: -17px;
+}
+.canvasbu {
+  border: none;
+}
+.circle {
+  border-radius: 200px 200px;
+}
+.marginimg {
+  margin-top: -100px;
 
-        .bg6 {
-            background-color: #f8f8f8;
-            border-top: 1px solid #ebebeb;
-            border-bottom : 1px solid #ebebeb;
-        }
+  width: 250px;
+  height: 470px;
+  z-index: 20000;
+}
+.viewanchor {
+  color: black !important;
+}
+.viewanchor:hover {
+  color: #090909;
+}
+h4 {
+  font-size: 13px;
+  line-height: 23px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+a i {
+  color: #6c6c6c;
+  font-size: 20px;
+}
+.tst {
+  background-color: #f5f5f5;
+  height: 220px;
+}
+.display {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  line-height: 28px;
+  border: 1px solid #dfdfdf;
+}
 
-        .bg1 {
-            background-image: url('../img/5bc26c68ca643a35ff2e403f_scott-webb-268893-unsplash (1).jpg');
-            background-position: center;
-            background-repeat: no-repeat;
-        }
+.display:hover {
+  border: 1px solid #752b2c;
+}
 
-        .bg2 {
-            background-color: #e4b366;
-            width: 40%;
-            border: 30px solid #d8a961;
-        }
-        
-        .bg3 {
-            background-color: #f05b10;
-            width: 40%;
-            border: 30px solid #e4550f;
-        }
+.display:hover i {
+  color: black;
+  font-weight: bold;
+}
 
-        .bg4 {
-            background-color: #a21010;
-            width: 40%;
-            border: 30px solid #9b0f10;
-        }
+.bg6 {
+  background-color: #f8f8f8;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+}
 
-        .bg5 {
-            background-image: linear-gradient(90deg, hsla(0, 0%, 100%, 0.89) 13%, hsla(0, 0%, 100%, 0) 57%), url('../img/5bb966fd82df351adbb449c6_raul-cacho-oses-779595-unsplash-p-3200.jpeg');
+.bg1 {
+  background-image: url("../img/5bc26c68ca643a35ff2e403f_scott-webb-268893-unsplash (1).jpg");
+  /* background-image: url("../img/background2.jpg"); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+/* .bg1 {
+            background: linear-gradient(to left, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4)), url('../img/background2.jpg');       
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-        }
-        .bg7 {
-            background-image: linear-gradient(90deg, #f8f6f4 34%, transparent), url('../img/bg2.jpg');
-            background-position: 0px 0px, 0px 50%;
-            background-size: auto, cover;
-            background-repeat: repeat, no-repeat;
-        }
-        .bg9 {
-            height :200px;
-            background-image: url('../img/5bb9649228dfc366d4954146_alisher-sharip-117976-unsplash-p-3200.jpeg');
-            background-position: 0px 51%;
-            background-size: cover;
-        }
-
-        .bg11 {
-            background-color: #ebb96a;
-        }
-
-        .bxl-telegram {
-    font-size: 48px;
+        } */
+.bg2 {
+  background-color: #e4b366;
+  width: 40%;
+  border: 30px solid #d8a961;
 }
 
-        .subs {
-    background-color: #000;
-    border: none;
-    box-shadow: none;
-    height: 45px;
-    transition: all 400ms ease;
-    font-size: 12px;
-    margin-left: -38px;
+.bg3 {
+  background-color: #f05b10;
+  width: 40%;
+  border: 30px solid #e4550f;
 }
 
-        .subs:hover {
-        background-color: #ac1313;
-    }
-
-        .enterinp {
-            height: 45px;
-            border-radius: unset;
-        }
-
-        .sign {
-            color: #a1a1a1;
-            cursor: pointer;
-        }
-
-        .form-check-input {
-    box-shadow: none;
+.bg4 {
+  background-color: #a21010;
+  width: 40%;
+  border: 30px solid #9b0f10;
 }
 
-        .form-check-input:checked {
-        background-color: #8534ff;
-    }
+.bg5 {
+  background-image: linear-gradient(
+      90deg,
+      hsla(0, 0%, 100%, 0.89) 13%,
+      hsla(0, 0%, 100%, 0) 57%
+    ),
+    url("../img/5bb966fd82df351adbb449c6_raul-cacho-oses-779595-unsplash-p-3200.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg7 {
+  background-image: linear-gradient(90deg, #f8f6f4 34%, transparent),
+  url("../img/5bb966fd82df351adbb449c6_raul-cacho-oses-779595-unsplash-p-3200.jpeg");
+  background-position: 0px 0px, 0px 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+.bg9 {
+  height: 200px;
+  background-image: url("../img/5bb9649228dfc366d4954146_alisher-sharip-117976-unsplash-p-3200.jpeg");
+  background-position: 0px 51%;
+  background-size: cover;
+}
 
-        .navlinks {
-            margin-left: 16px;
-            margin-right: 16px;
-        }
+.bg11 {
+  background-color: #ebb96a;
+}
 
+.bxl-telegram {
+  font-size: 48px;
+}
 
-        .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-            background: transparent;
-            color: #ac1313 !important;
-        }
+.subs {
+  background-color: #000;
+  border: none;
+  box-shadow: none;
+  height: 45px;
+  transition: all 400ms ease;
+  font-size: 12px;
+  margin-left: -38px;
+}
 
-        .act {
-            color: #ac1313;
-            font-family: 'Playfair Display';
-            font-size: 68px;
-        }
+.subs:hover {
+  background-color: #ac1313;
+}
 
-        .red {
-            color: #d77474;
-            font-family: Poppins, sans-serif;
-        }
+.enterinp {
+  height: 45px;
+  border-radius: unset;
+}
 
-        .scale {
-            width: 100%;
-            height: auto;
-            overflow: hidden;
-        }
+.sign {
+  color: #a1a1a1;
+  cursor: pointer;
+}
 
-            .scale img {
-                width: 100%;
-                transform: scale(1);
-                transition: 0.3s ease-out;
-            }
+.form-check-input {
+  box-shadow: none;
+}
 
-            .scale:hover img {
-                transform: scale(1.1);
-                width: 100%;
-            }
+.form-check-input:checked {
+  background-color: #8534ff;
+}
 
-        .nav-link {
-            border-top: 1px solid #dcdcdc;
-            margin-top: -1px;
-        }
-        @media screen and (max-width:790px) {
-            .subs {
-        margin-left: 0;
-    }
+.navlinks {
+  margin-left: 16px;
+  margin-right: 16px;
+  font-size: 1.2em; /* 将字体大小设置为当前字体大小的 1.2 倍 - 你可以调整这个值 */
+}
 
-            header .navbar-nav > li {
-        border-bottom: 1px solid #ccc5c5;
-    }
-        }
-        @media screen and (min-width:991px) {
-            .navbar-light {
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 1000;
-    }
-            .borheader {
-                border-bottom: 0.5px solid #dedede !important;
-            }
-            .navepad {
-        margin: 0 20px !important;
-    }
-        }
-        @media screen and (max-width:991px) {
-            .navepad {
-        padding-top: 16px !important;
-        padding-bottom: 18px !important;
-    }
-            .act {
-                font-size: 30px;
-            }
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background: transparent;
+  color: #ffd700 !important;
+  /* font-size: 1.2em;  */
+}
 
-        }
+.act {
+  color: #a7c9d5;
+  font-family: "Playfair Display";
+  font-size: 68px;
+  /* font-size: 48px; 茶杯符号可能不需要那么大的尺寸，可以适当减小 */
+}
+
+.red {
+  color: #d77474;
+  font-family: Poppins, sans-serif;
+}
+
+.scale {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.scale img {
+  width: 100%;
+  transform: scale(1);
+  transition: 0.3s ease-out;
+}
+
+.scale:hover img {
+  transform: scale(1.1);
+  width: 100%;
+}
+
+.nav-link {
+  border-top: 1px solid #dcdcdc;
+  margin-top: -1px;
+}
+@media screen and (max-width: 790px) {
+  .subs {
+    margin-left: 0;
+  }
+
+  header .navbar-nav > li {
+    border-bottom: 1px solid #ccc5c5;
+  }
+}
+@media screen and (min-width: 991px) {
+  .navbar-light {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  .borheader {
+    border-bottom: 0.5px solid #dedede !important;
+  }
+  .navepad {
+    margin: 0 20px !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  .navepad {
+    padding-top: 16px !important;
+    padding-bottom: 18px !important;
+  }
+  .act {
+    font-size: 30px;
+  }
+}
+.product-image-container {
+  width: 100%; /* 让容器宽度撑满父元素 (col-md-4) */
+  padding-bottom: 100%; /* 创建 1:1 的宽高比 - 你可以调整这个值来改变宽高比 */
+  position: relative; /* 使内部的图片可以绝对定位 */
+  overflow: hidden; /* 裁剪超出容器比例的图片 */
+  margin-bottom: 10px; /* 可选：为图片容器添加下外边距 */
+}
+
+.product-image-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; 裁剪并缩放图片以完全填充容器，可能会裁剪部分图片 */
+  object-fit: contain; /*缩放图片以适应容器，保持宽高比，可能会出现留白  */
+}
+
+.about-intro {
+  text-align: center; /* 实现水平居中 */
+  padding: 2em; /* 可选：添加一些内边距，让文字周围有空间 */
+  margin-left: auto; /* 实现水平居中 */
+  margin-right: auto; /* 实现水平居中 */
+  margin-top: 4em; /* 设置上外边距为 4em */
+  margin-bottom: 4em; /* 设置下外边距为 8em */
+  max-width: 80%; /* 可选：限制段落的最大宽度，使其在较大屏幕上不会显得过宽 */
+  /* 其他你可能需要的样式，例如字体、颜色等 */
+  position: relative; /* 为添加小元素做定位参考 */
+}
+
+.about-intro p {
+  line-height: 1.8; /* 可选：调整行高，提高可读性 */
+  color: #333; /* 可选：设置文字颜色 */
+  font-size: 1.1em; /* 可选：调整字体大小 */
+}
+
+/* 添加小元素 */
+.about-intro::before,
+.about-intro::after {
+  content: "";
+  display: block;
+  width: 50px; /* 调整小元素的宽度 */
+  height: 2px; /* 调整小元素的高度 */
+  background-color: #ac1313; /* 设置小元素的颜色，可以是你之前用过的红色 */
+  margin: 1em auto; /* 将小元素水平居中，并添加上下外边距 */
+}
+
+/* 可以添加更具主题性的小元素，例如茶叶形状的线条 */
+.about-intro.themed::before,
+.about-intro.themed::after {
+  width: 30px;
+  height: 30px;
+  background-image: url('../img/leaf.jpg'); /* 替换为你的茶叶小图标路径 */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent; /* 移除背景色 */
+}

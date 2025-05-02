@@ -1,263 +1,364 @@
 ﻿<!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="utf-8" />
-    <title>Pompeo - AI E-Commerce HTML website Template_files</title>
-
-    <link rel="shortcut icon " href="img/5bbb630486f1ae3d11491e16_Pompeo-32.jpg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>茶韵珐华--非遗掐丝珐琅工艺与茶韵的碰撞融合</title>
+    <link
+      rel="shortcut icon "
+      href="img/5bbb630486f1ae3d11491e16_Pompeo-32.jpg"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="style/StyleSheet.css" rel="stylesheet" />
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display&family=Source+Sans+Pro:ital,wght@0,200;0,300;1,300;1,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Source+Sans+Pro:ital,wght@0,200;0,300;1,300;1,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display&family=Poppins:wght@300&family=Source+Sans+Pro:ital,wght@0,200;0,300;1,300;1,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Pacifico&family=Playfair+Display&family=Poppins:wght@300&family=Source+Sans+Pro:ital,wght@0,200;0,300;1,300;1,400&display=swap" rel="stylesheet">
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display&family=Source+Sans+Pro:ital,wght@0,200;0,300;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Source+Sans+Pro:ital,wght@0,200;0,300;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display&family=Poppins:wght@300&family=Source+Sans+Pro:ital,wght@0,200;0,300;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Pacifico&family=Playfair+Display&family=Poppins:wght@300&family=Source+Sans+Pro:ital,wght@0,200;0,300;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <style>
+        #map {
+            width: 100%;
+            height: 450px;
+        }
+
+        .nav-link {
+            border-top: 1px solid #dcdcdc;
+            margin-top: -1px;
+        }
+
+        .bg8 {
+            background-image: linear-gradient(90deg, #f8f6f4 30%, transparent), url('img/bg8.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style> -->
     <style>
+      /* body {
+          font-family: 'Source Sans Pro', sans-serif;
+          background-color: #fdfaf7;
+        } */
+      .nav-links {
+        text-align: center;
+        padding: 20px;
+      }
 
+      .nav-links a {
+        margin: 0 15px;
+        color: #6c584c;
+        font-weight: bold;
+        text-decoration: none;
+        border-bottom: 2px solid transparent;
+        transition: border-color 0.3s;
+      }
+      body {
+        padding-top: 80px; /* 让所有内容避开 fixed 的导航栏 */
+      }
 
+      .nav-links a:hover {
+        border-color: #a0816c;
+      }
 
+      .section-block {
+        padding: 60px 0;
+        border-bottom: 1px solid #eee;
+      }
 
-        @media screen and (min-width:991px) {
+      .image-box {
+        max-width: 80%;
+        border-radius: 14px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      }
 
-            .bg7 {
-                margin-top: 70px;
-                background-image: linear-gradient(90deg, #f8f6f4 34%, transparent), url('img/bg1.jpg');
-            }
+      .text-box {
+        padding-left: 10px;
+      }
 
-            .conta {
-                width: 87%;
-                margin-left: auto;
-                margin-right: auto;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                flex-wrap: wrap;
-            }
+      .text-box h2 {
+        font-weight: bold;
+        color: #3a2f2f;
+      }
 
-            .wid {
-                width: 70%;
-            }
+      .text-box p {
+        font-size: 1.1rem;
+        color: #333;
+      }
+
+      @media (max-width: 768px) {
+        .text-box {
+          padding-left: 0;
+          margin-top: 20px;
         }
-
-        .fs {
-            color: #a1a1a1;
-            font-size: 10px;
-            font-weight: 500;
-        }
-
-        h5 {
-            color: #1f2532;
-            font-weight: 500;
-            font-size: 15px;
-        }
+      }
+      .navepad h2 {
+    color: #8FBC8F; /* 将颜色替换为你想要的青色或绿色，例如暗海绿 */
+}
     </style>
-</head>
-<body>
-
+  </head>
+  <body>
     <header class="">
-        <div class="navbar navbar-light navbar-expand-lg py-0 bg-white borheader">
-            <div class="container-fluid py-lg-3 px-0 px-lg-5">
-                <a href="index.html" class="navbar-brand ms-4 ms-lg-0 navepad"><h2 class="h2 fw-bolder"> Pompeo </h2> </a>
+      <div class="navbar navbar-light navbar-expand-lg py-0 bg-white borheader">
+        <div class="container-fluid py-lg-3 px-0 px-lg-5">
+          <a href="index.html" class="navbar-brand ms-4 ms-lg-0 navepad"
+            ><img src="./img/L12.jpg" alt="茶·韵·珐·华" style="height: 50px; "> 
+          </a>
 
-                <button class="bg-white canvasbu order-lg-last ms-auto" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft"> <i class='bx bx-cart-alt'></i><span> Cart</span></button>
-                <button class="navbar-toggler ms-3 me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <div class="d-flex flex-column">
-                        <span class="text-black marginemin1"><i class='bx bx-minus '></i> </span>
-                        <span class="text-black"><i class='bx bx-minus'></i></span>
-                        <span class="text-black  marginemin "><i class='bx bx-minus'></i></span>
-                    </div>
-                </button>
-
-
-                <nav class="collapse navbar-collapse order-lg-1 mt-2 mt-lg-0" id="navbarNav">
-                    <ul class="navbar-nav  mx-lg-auto p-0 nav-pills" id="navbar-example2">
-                        <li></li>
-                        <li class="nav-item"><a class="nav-link  text-uppercase navlinks ms-lg-0 navepad " href="index.html">home</a></li>
-                        <li class="nav-item"><a class="nav-link  text-uppercase navlinks  navepad active" aria-current="page" href="AboutPage.html">about</a></li>
-                        <li class="nav-item"><a class="nav-link  text-uppercase  navlinks navepad" href="ShopePage.html">shop</a></li>
-                        <li class="nav-item"><a class="nav-link  text-uppercase navlinks  navepad" href="ContactPage.html">Contact</a></li>
-                    </ul>
-                </nav>
-
-                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasLeft" aria-labelledby="offcanvasLeftLabel">
-                    <div class="offcanvas-header">
-                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        ...
-                    </div>
-                </div>
+          <!-- <button
+            class="bg-white canvasbu order-lg-last ms-auto"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasLeft"
+            aria-controls="offcanvasLeft"
+          >
+            <i class="bx bx-cart-alt"></i><span> Cart</span>
+          </button> -->
+          <button
+            class="navbar-toggler ms-3 me-3"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <div class="d-flex flex-column">
+              <span class="text-black marginemin1"
+                ><i class="bx bx-minus"></i>
+              </span>
+              <span class="text-black"><i class="bx bx-minus"></i></span>
+              <span class="text-black marginemin"
+                ><i class="bx bx-minus"></i
+              ></span>
             </div>
+          </button>
+
+          <nav
+            class="collapse navbar-collapse order-lg-1 mt-2 mt-lg-0"
+            id="navbarNav"
+          >
+            <ul
+              class="navbar-nav mx-lg-auto p-0 nav-pills"
+              id="navbar-example2"
+            >
+              <li></li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-uppercase navlinks ms-lg-0 navepad"
+                  href="index.html"
+                  >首页</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-uppercase navlinks navepad active"
+                  aria-current="page"
+                  href="AboutPage.html"
+                  >展览</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-uppercase navlinks navepad"
+                  href="ShopePage.html"
+                  >资讯</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-uppercase navlinks navepad"
+                  
+                  href="ContactPage.html"
+                  >关于</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasLeft"
+            aria-labelledby="offcanvasLeftLabel"
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">...</div>
+          </div>
         </div>
+      </div>
     </header>
 
-
-        <div class="bg7 py-5">
-            <div class="container my-5 py-5">
-                <div class=" col-lg-6">
-                    <h1>About Us</h1>
-                    <p class=" pe-lg-4">
-                        The attractions of ceramics lie partly in its contradictions. It is both difficult and easy, with an element beyond our control. It is both extremely fragile and durable. Like 'Sumi' ink painting, it does not lend itself to erasures and indecision.
-                    </p>
-                </div>
-            </div>
+    <!-- 第1个区域 -->
+    <!-- <section id="chahu" class="section-block pt-5 pb-4"> -->
+    <section id="chahu" class="section-block">
+      <div class="container ">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <img src="img/chahu.jpg" alt="Ceramic Vase" class="image-box" />
+          </div>
+          <div class="col-md-6 text-box">
+            <h2>“听泉注” 茶壶</h2>
+            <p>
+                以独特设计诠释传统与自然的“天人合一”之美。其采用掐丝珐琅这一经典工艺，彰显对传统技艺的传承与创新。“听泉注” 之名，掐丝珐琅勾勒出悠然意境。整体设计将工艺、文化、自然完美融合，不仅是实用茶具，更是蕴含深厚内涵的艺术佳作，传递出亲近自然、品味古典雅致生活的理念。
+            </p>
+          </div>
         </div>
+      </div>
+    </section>
 
-
-        <div class=" container mt-5 pt-5">
-            <div class=" text-center mt-5">
-                <p class="red"> PRODUCT CATEGORIES</p>
-                <h1><b>   Porcelain</b>  <span class="act">&</span> <b> Pottery</b></h1>
-            </div>
-            <div class=" row mt-5">
-                <div class=" col-lg-4 text-center">
-                    <div class="rounded-circle text-white bg2 text-center pt-3 pb-1 mx-auto wid pt-lg-5 pb-lg-4">
-                        <img src="img/1.png" class=" img-fluid  mb-3" width=" 70" />
-                        <p class=" text-white "> VASES</p>
-                    </div>
-                </div>
-
-                <div class=" col-lg-4 ">
-                    <div class="rounded-circle text-white bg3 text-center pt-3 pb-1 pt-3 mx-auto wid pt-lg-5 pb-lg-4 mt-5 mt-lg-0">
-                        <img src="img/2.png" class=" img-fluid  mb-3" width=" 70" />
-                        <p class=" text-white "> MUGS</p>
-                    </div>
-                </div>
-                <div class=" col-lg-4">
-                    <div class="rounded-circle text-white bg4 text-center pb-1 pt-3 mx-auto mt-5 mt-lg-0 wid pt-lg-5 pb-lg-4">
-                        <img src="img/3.png" class=" img-fluid  mb-3" width=" 70" />
-                        <p class=" text-white "> PLATES</p>
-                    </div>
-                </div>
-            </div>
+    <!-- 第2个区域 -->
+    <section id="chabei" class="section-block">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <img src="img/p1.jpg" alt="Porcelain Plate" class="image-box" />
+          </div>
+          <div class="col-md-6 text-box">
+            <h2>“春冰薄”茶杯</h2>
+            <p>
+                工艺上，采用掐丝珐琅这一传统技艺，历经多道复杂工序，使茶杯呈现出细腻华丽质感，既传承古老匠艺，又展现非遗魅力，赋予其深厚文化底蕴与艺术价值。“春冰薄”茶杯将传统工艺、经典纹样与宋代美学有机融合，是实用器物，更是文化与艺术交融的结晶，为使用者带来别具一格的审美体验与文化享受。
+            </p>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <div class="container my-5 ">
-            <div class=" row my-5 ">
-                <div class=" col-lg-6 ps-lg-5 my-4">
-                    <h2 class=" mb-0"> Hand Grafted </h2><h2 class=" mb-4"> Pottery since 1990</h2>
-                    <p class=" pe-5"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus posuere.</p>
-                </div>
-
-                <div class=" col-lg-6 ps-lg-5 my-4 ">
-                    <h2 class=" mb-0">  We Provide Premium </h2><h2 class=" mb-4">  Pottery Produts</h2>
-                    <p class=" pe-5"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus posuere.</p>
-                </div>
-            </div>
+    <!-- 第3个区域 -->
+    <section id="beidian" class="section-block">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <img
+              src="img/beidian2.jfif"
+              alt="Ceramic Sculpture"
+              class="image-box"
+            />
+          </div>
+          <div class="col-md-6 text-box">
+            <h2>“竹露响”茶垫</h2>
+            <p>
+                工艺层面，采用掐丝珐琅这一传统技法，经制胎、掐丝、点蓝、烧蓝、磨光、镀金等多道工序，赋予茶垫精致华丽质感，使其在实用之余，更具艺术观赏价值，彰显传统工艺魅力。“竹露响”茶垫将掐丝珐琅工艺、闽南老花砖几何肌理、三角梅图案及传统建造韵律有机融合，既是实用茶事器具，也是承载闽南地域文化与传统美学的艺术小品，为使用者带来兼具文化与审美的独特体验。
+            </p>
+          </div>
         </div>
+      </div>
+    </section>
 
-
-
-        <div class=" bg6 my-5 ">
-            <div class="container  mb-3 py-5">
-                <div class="mx-auto my-5 text-center ">
-                    <p class="red">   OUR CREW</p>
-                    <h1>Talented Artist</h1>
-                </div>
-
-                <div class=" row mb-5">
-                    <div class=" col-md-4 ps-4 mb-3">
-                        <div class=" bg-white  text-center py-5">
-                            <img src="img/img1.jpeg" class="img-fluid rounded-circle" width=" 90" style=" height :90px ;" />
-                            <h5 class="mt-3">  Maria Monroy</h5>
-                            <p class="fs"> SENIOR DESIGNER </p>
-                            <p class=" px-4">   Lorem ipsum dolor sit amet, consectetur adipiscing elit.  enim in eros elementum</p>
-                            <div class=" mt-4">
-                                <a href=" #" class=" text-black display"><i class='bx bxl-facebook align-middle '></i> </a>
-                                <a href=" #" class=" text-black display"><i class='bx bxl-twitter align-middle'></i> </a>
-                                <a href=" #" class=" text-black display"><i class='bx bxl-google-plus align-middle'></i> </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" col-md-4 ps-4  mb-3">
-                        <div class=" bg-white  text-center py-5">
-                            <img src="img/img2.jpg" class=" img-fluid rounded-circle" width=" 90" />
-                            <h5 class=" mt-3"> Dominic Basket</h5>
-                            <p class="fs"> SENIOR DESIGNER </p>
-                            <p class=" px-4"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.  enim in eros elementum</p>
-                            <div class=" mt-4">
-                                <a href=" #" class=" text-black display"><i class='bx bxl-facebook align-middle '></i> </a>
-                                <a href=" #" class=" text-black display"><i class='bx bxl-twitter align-middle'></i> </a>
-                                <a href=" #" class=" text-black display"><i class='bx bxl-google-plus align-middle'></i> </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" col-md-4 ps-4  mb-3">
-                        <div class=" bg-white text-center py-5">
-                            <img src="img/img3.jpg" class=" img-fluid rounded-circle" width=" 90" />
-                            <h5 class=" mt-3">  Eduard Fisher</h5>
-                            <p class="fs"> SENIOR DESIGNER </p>
-                            <p class="px-4">   Lorem ipsum dolor sit amet, consectetur adipiscing elit.  enim in eros elementum</p>
-                            <div class=" mt-4">
-                                <a href=" #" class=" text-black display"> <i class='bx bxl-facebook align-middle'></i></a>
-                                <a href=" #" class=" text-black display"><i class='bx bxl-twitter align-middle'></i> </a>
-                                <a href=" #" class=" text-black display"><i class='bx bxl-google-plus align-middle'></i> </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- 第4个区域 -->
+    <section id="diaozhui" class="section-block">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <img
+              src="img/diaozhui.jpg"
+              alt="Ceramic Sculpture"
+              class="image-box"
+            />
+          </div>
+          <div class="col-md-6 text-box">
+            <h2>“琅轩影”吊坠</h2>
+            <p>
+                在工艺上，掐丝珐琅工艺历史悠久，工序繁复，需经制胎、掐丝、点蓝、烧蓝、磨光、镀金等多道精细工序。其运用使首饰表面呈现出绚丽色彩与精致质感，彰显传统工艺之美，赋予首饰深厚文化底蕴与独特艺术价值。山水图案的融入，是对中国传统山水画意境的呼应。中国山水画追求 “咫尺之图，写千里之景” 的意境营造，注重表现自然山水的神韵与气势。吊坠上的山水图案，以小见大，将山川的灵秀、江河的蜿蜒浓缩其中，使佩戴者能随时感受自然山水的宁静与悠远，于方寸之间领略天地大美。
+            </p>
+          </div>
         </div>
+      </div>
+    </section>
 
-
-
-        <div class="container my-5 py-5">
-            <div class=" row my-5 py-5">
-
-                <div class="col-lg-5 mx-auto mx-lg-0 me-lg-5  p-5 p-lg-0 mb-4 mb-lg-0">
-                    <div class="tst">
-                        <div class="text-center">
-                            <img src="img/5.png" class="mx-auto marginimg" style="width:300px; height:350px; margin-top:-50px;"/>
-                        </div>
-                    </div>
-                </div>
-                <div class=" col-lg-5  mt-5 pt-5 p-lg-0 mt-lg-0">
-                    <h3>Created With Love<span class="act ">&</span>   Passion</h3>
-                    <p class=" pe-5 me-5">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
-                    </p>
-                    <a href=" #">View More Pieces</a>
-                </div>
-            </div>
+    <!-- 第5个区域 -->
+    <section id="xianglian" class="section-block">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <img
+              src="img/xianglian.jpg"
+              alt="Ceramic Sculpture"
+              class="image-box"
+            />
+          </div>
+          <div class="col-md-6 text-box">
+            <h2>“一叶禅”项链</h2>
+            <p>
+                掐丝珐琅首饰工艺，从精心制胎、巧妙掐丝勾勒图案，到点蓝填釉、高温烧蓝，再经打磨镀金，古韵流转于方寸间。同时，“一叶禅”之名蕴含禅意，与佛教文化中“一叶一菩提”的理念相呼应，寓意通过细微事物洞察深刻哲理，追求内心宁静与智慧，使佩戴者在喧嚣尘世中寻得内心安宁。
+            </p>
+          </div>
         </div>
+      </div>
+    </section>
 
-
-
-        <div class="pt-4" style=" background-color: hsla(0, 0%, 85.9%, 0.1);">
-            <div class=" container py-5 mt-5">
-                <div class="mx-auto text-center ">
-                    <a href="index.html" class="text-decoration-none "><h2 class="h2 fw-bolder text-black "> Pompeo </h2> </a>
-                    <p class=" mb-0 pb-0 mt-4"> I have always striven to fix beauty in wood, stone,</p>
-                    <p>  glass or pottery, that has been my creed. </p>
-                    <div class=" row mt-5 pt-5">
-                        <div class=" col-md-4">
-                            <img src="img/13.png" class=" img-fluid " width=" 40" />
-                            <h4 class=" mt-2 ">EMAIL</h4>
-                            <p>info@example.com</p>
-                        </div>
-
-
-                        <div class=" col-md-4">
-                            <img src="img/14.png" class=" img-fluid " width=" 40" />
-                            <h4 class=" mt-2 ">  FIND</h4>
-                            <p class=" mb-0 pb-0">  Central Park, Manhattan </p>
-                            <p>  New York, 1101</p>
-                        </div>
-                        <div class=" col-md-4">
-                            <img src="img/15.png" class=" img-fluid " width=" 40" />
-                            <h4 class=" mt-2 ">CALL   </h4>
-                            <p> +1 234 567 891 </p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="mx-auto text-center py-4 " style=" border-top: 1px solid #ebebeb; background-color: hsla(0, 0%, 85.9%, 0.1);">
-                <p class=" m-0 p-0"> Template design by <strong>AI</strong></p>
-            </div>
+    <!-- 第6个区域 -->
+    <section id="erhuan" class="section-block">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <img
+              src="img/erhuan.jpg"
+              alt="Ceramic Sculpture"
+              class="image-box"
+            />
+          </div>
+          <div class="col-md-6 text-box">
+            <h2>“珐月弯”耳环</h2>
+            <p>
+                掐丝珐琅首饰，以制胎为始，掐丝塑形，点蓝赋彩，烧蓝定色，打磨镀金收尾，尽显传统工艺精妙。莲花山水图案，极具文化内涵与审美价值。莲花在传统文化中代表纯洁、高雅与吉祥，出淤泥而不染的特质象征着高尚品德。山水图案则营造出悠远、空灵意境，体现中国人对自然山水的热爱与向往。二者结合，使耳环不仅是饰品，更似一幅微型山水画卷，佩戴者仿若将自然之美与文化之韵置于耳畔，展现优雅气质与文化品味。
+            </p>
+          </div>
         </div>
-        <script src="js/bootstrap.bundle.min.js"></script>
-</body>
+      </div>
+    </section>
+
+    <!-- <div class="bg5 py-5 my-5">
+      <div class="container mt-5">
+        <div class="col-lg-5 my-5">
+          <p class="red">了解更多</p>
+          <h1>了解更多</h1>
+          <p>
+            这里还没写不知道写什么
+            <span class="text-decoration-underline me-5" style="color: #ac1313"
+              >同理</span
+            >
+            Suspendisse varius enim in eros elementum.
+          </p>
+
+          <a class="btn btn-danger rounded-0 p-3 mb-4" href="ShopePage.html">
+            更多，有点保留了之前的页面，un</a
+          >
+          <a href="#">
+            <img
+              src="img//5bc26c68ca643a35ff2e403f_scott-webb-268893-unsplash (1).jpg"
+              class="img-fluid"
+              width=" 40"
+            />
+          </a>
+          
+        </div>
+        
+
+      </div>
+    </div> -->
+    <div class="mx-auto text-center py-4 " style=" border-top: 1px solid #ebebeb; background-color: hsla(0, 0%, 85.9%, 0.1);">
+        <p class=" m-0 p-0"> The Art of Tea & Enamel </p>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
