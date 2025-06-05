@@ -126,8 +126,15 @@ a i {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.bg11 {
+  background-image: linear-gradient(90deg, #f8f6f4 40%, transparent),
+  url("../img/bac2.jpg");
+  background-position: 0px 0px, 0px 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
 .bg7 {
-  background-image: linear-gradient(90deg, #f8f6f4 25%, transparent),
+  background-image: linear-gradient(90deg, #f8f6f4 30%, transparent),
   url("../img/bac1.jpg");
   background-position: 0px 0px, 0px 50%;
   background-size: auto, cover;
