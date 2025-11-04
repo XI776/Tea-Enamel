@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>茶韵珐华--非遗掐丝珐琅工艺与茶韵的碰撞融合</title>
+    <link rel="shortcut icon " href="img/lowww (1).png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="style/StyleSheet.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display&family=Source+Sans+Pro:ital,wght@0,200;0,300;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Source+Sans+Pro:ital,wght@0,200;0,300;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display&family=Poppins:wght@300&family=Source+Sans+Pro:ital,wght@0,200;0,300;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Pacifico&family=Playfair+Display&family=Poppins:wght@300&family=Source+Sans+Pro:ital,wght@0,200;0,300;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @media screen and (min-width: 991px) {
+        .bg1 {
+          margin-top: 70px;
+        }
+        .wid {
+          width: 70%;
+        }
+        .navepad h2 {
+          color: #8fbc8f; /* 将颜色替换为你想要的青色或绿色，例如暗海绿 */
+        }
+        .mb-3 {
+          color: #06404f;
+        }
+      }
+
+      
+      /* --- 新增/修改：为 Collection 区域的 Model-Viewer 定义样式 --- */
+.model-collection-viewer {
+  width: 100%;
+  /* 确保高度与旁边的图片保持一致，可以调整 */
+  height: 300px; 
+  /* 核心修改：将背景色改为黑色 */
+  background-color: #000000; 
+  border-radius: 4px;
+  display: block; 
+}
+    </style>
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+  </head>
+  <body>
+    <header class="">
+      <div class="navbar navbar-light navbar-expand-lg py-0 bg-white borheader">
+        <div class="container-fluid py-lg-3 px-0 px-lg-5">
+          <a href="index.html" class="navbar-brand ms-4 ms-lg-0 navepad"
+            ><img src="./img/L12.jpg" alt="茶·韵·珐·华" style="height: 50px" />
+          </a>
+
+          <button
+            class="navbar-toggler ms-3 me-3"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <div class="d-flex flex-column">
+              <span class="text-black marginemin1"
+                ><i class="bx bx-minus"></i>
+              </span>
+              <span class="text-black"><i class="bx bx-minus"></i></span>
+              <span class="text-black marginemin"
+                ><i class="bx bx-minus"></i
+              ></span>
+            </div>
+          </button>
+
+          <nav
+            class="collapse navbar-collapse order-lg-1 mt-2 mt-lg-0"
+            id="navbarNav"
+          >
+            <ul
+              class="navbar-nav mx-lg-auto p-0 nav-pills"
+              id="navbar-example2"
+            >
+              <li></li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-uppercase navlinks ms-lg-0 navepad active"
+                  aria-current="page"
+                  href="index.html"
+                  >首页</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-uppercase navlinks navepad"
+                  href="AboutPage.html"
+                  >展览</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-uppercase navlinks navepad"
+                  href="ShopePage.html"
+                  >资讯</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-uppercase navlinks navepad"
+                  href="ContactPage.html"
+                  >关于</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasLeft"
+            aria-labelledby="offcanvasLeftLabel"
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">...</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="bg1">
+      <div class="container text-sm-center text-lg-start">
+        <div class="row py-5">
+          <div class="col-lg-5 py-5">
+            <h1 class="mb-3">珐 彩 凝 香<br />翠 琅 琉 霞</h1>
+
+            <p class="mb-3">非遗掐丝珐琅工艺与茶韵的碰撞融合</p>
+            <a
+              class="btn btn-danger px-5 py-3 mb-lg-5 mt-3"
+              href="AboutPage.html"
+            >
+              cloisonné enamel</a
+            >
+          </div>
+          <div class="col-lg-7 mt-4 mt-lg-0">
+            <img src="img/vha.jfif" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="mx-auto text-center mt-5">
+        <p class="red">OUR</p>
+        <h2>Collection</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="scale pe-1 border-bottom">
+            <div class="scale">
+              <div class="product-image-container">
+                <a href="AboutPage.html#chahu">
+                  <model-viewer
+                    id="viewer-chahu"
+                    src="models/scene.glb" 
+                    alt="3D 听泉注茶壶模型"
+                    class="model-collection-viewer"
+                    camera-controls
+                    auto-rotate
+                    rotation-per-second="18deg"
+                    shadow-intensity="1.5"
+                    environment-image="neutral"
+                    exposure="1.5"
+                    camera-orbit="0deg 75deg 2m"
+                    camera-target="0m 0m 0m"
+                    field-of-view="40deg"
+                  >
+                  </model-viewer>
+                  </a>
+              </div>
+            </div>
+            <div id="chahu">
+              <p>“听泉注” 茶壶</p>
+              <a href="AboutPage.html#chahu" class="viewanchor"
+                >View Details</a
+              >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div
+            class="scale border-bottom"
+            style="padding-left: 2px; padding-right: 2px"
+          >
+            <div class="scale">
+              <div class="product-image-container">
+                <a href="AboutPage.html#chabei">
+                  <img
+                    src="img/微信图片_20250605202956.jpg"
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+            </div>
+            <div id="chabei">
+              <p>“春冰薄”茶杯</p>
+              <a href="AboutPage.html#chabei" class="viewanchor">
+                View Details</a
+              >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="scale ps-1 border-bottom">
+            <div class="scale">
+              <div class="product-image-container">
+                <a href="AboutPage.html#beidian">
+                  <img
+                    src="img/微信图片_20250605202944.jpg"
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+            </div>
+            <p>“竹露响”茶垫</p>
+            <a href="ContactPage.html#beidian" class="viewanchor">
+              View Details</a
+            >
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col-md-4">
+          <div class="scale pe-1 border-bottom">
+            <div class="scale">
+              <div class="product-image-container">
+                <a href="AboutPage.html#diaozhui">
+                  <img
+                    src="img/微信图片_20250605202953.jpg"
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+            </div>
+            <div id="diaozhui">
+              <p>“琅轩影”吊坠</p>
+              <a href="ContactPage.html#diaozhui" class="viewanchor">
+                View Details</a
+              >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div
+            class="scale border-bottom"
+            style="padding-left: 2px; padding-right: 2px"
+          >
+            <div class="scale">
+              <div class="product-image-container">
+                <a href="AboutPage.html#xianglian">
+                  <img
+                    src="img/微信图片_20250605202947.jpg"
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+            </div>
+            <div id="xianglian">
+              <p>“一叶禅”项链</p>
+              <a href="AboutPage.html#xianglian" class="viewanchor">
+                View Details</a
+              >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="scale ps-1 border-bottom">
+            <div class="scale">
+              <div class="product-image-container">
+                <a href="AboutPage.html#erhuan">
+                  <img
+                    src="img/微信图片_20250605202950.jpg"
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+            </div>
+            <div id="erhuan">
+              <p>“珐月弯”耳环</p>
+              <a href="AboutPage.html#erhuan" class="viewanchor">
+                View Details</a
+              >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-5">
+      <div class="mx-auto text-center my-5">
+        <a class="btn btn-danger rounded-0 p-3 mb-5" href="AboutPage.html"
+          >VIEW ALL DETAILS
+        </a>
+      </div>
+    </div>
+
+    <div class="bg5 py-5 my-5">
+      <div class="container mt-5">
+        <div class="col-lg-5 my-5">
+          <p class="red">TEA & Cloisonné</p>
+          <h1>TEA & Cloisonné</h1>
+          <p>东方茶韵，指尖珐华</p>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="mx-auto text-center py-4"
+      style="
+        border-top: 1px solid #ebebeb;
+        background-color: hsla(0, 0%, 85.9%, 0.1);
+      "
+    >
+      <p class="m-0 p-0">The Art of Tea & Enamel</p>
+    </div>
+    
+    <script>
+      const viewer = document.getElementById("viewer-chahu");
+      const TARGET_SIZE = 1.0; // Collection 中的模型可以设置稍微小一点，例如 1.0 
+
+      /**
+       * 监听模型加载完成事件，用于执行模型的自动缩放和居中操作
+       */
+      viewer.addEventListener("load", () => {
+        // 访问 THREE.js 库，Model-Viewer 在加载后会将其暴露在 window 上
+        if (!window.THREE || !viewer.model) {
+          console.error("THREE.js 或 Model 对象未加载。");
+          return;
+        }
+
+        const THREE = window.THREE;
+        const scene = viewer.model.scene;
+
+        // 1. 计算模型的边界框 (Bounding Box)
+        const box = new THREE.Box3().setFromObject(scene);
+        const size = new THREE.Vector3();
+        box.getSize(size);
+        const center = new THREE.Vector3();
+        box.getCenter(center);
+
+        // 2. 计算缩放因子
+        const largestDimension = Math.max(size.x, size.y, size.z);
+        // 使用 TARGET_SIZE 确保模型合适
+        const scaleFactor = TARGET_SIZE / largestDimension;
+
+        // 3. 应用缩放
+        scene.scale.setScalar(scaleFactor);
+
+        // 4. 应用居中平移
+        const scaledCenter = center.clone().multiplyScalar(scaleFactor);
+        scene.position.sub(scaledCenter);
+
+        console.log(`✅ “听泉注”茶壶模型加载完成并自动缩放比例：${scaleFactor.toFixed(3)}`);
+      });
+      
+      viewer.addEventListener("error", (event) => {
+          console.error("❌ “听泉注”茶壶模型加载失败:", event.detail);
+      });
+    </script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

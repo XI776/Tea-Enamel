@@ -27,29 +27,16 @@
       href="https://fonts.loli.net/css2?family=Libre+Franklin&family=Pacifico&family=Playfair+Display&family=Poppins:wght@300&family=Source+Sans+Pro:ital,wght@0,200;0,300;1,300;1,400&display=swap"
       rel="stylesheet"
     />
-    <!-- <style>
-        #map {
-            width: 100%;
-            height: 450px;
-        }
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"
+    ></script>
 
-        .nav-link {
-            border-top: 1px solid #dcdcdc;
-            margin-top: -1px;
-        }
-
-        .bg8 {
-            background-image: linear-gradient(90deg, #f8f6f4 30%, transparent), url('img/bg8.jpg');
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-    </style> -->
     <style>
       /* body {
-          font-family: 'Source Sans Pro', sans-serif;
-          background-color: #fdfaf7;
-        } */
+            font-family: 'Source Sans Pro', sans-serif;
+            background-color: #fdfaf7;
+          } */
       .nav-links {
         text-align: center;
         padding: 20px;
@@ -80,6 +67,11 @@
         max-width: 80%;
         border-radius: 14px;
         box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        /* **【关键修改】**：为 model-viewer 设置一个最小高度，以保持布局和可视性 */
+        height: 100%; /* 确保它能填满父容器 */
+        min-height: 450px; /* 调整此值以匹配您期望的高度 */
+        width: 100%;
+        display: block;
       }
 
       .text-box {
@@ -101,6 +93,10 @@
           padding-left: 0;
           margin-top: 20px;
         }
+        /* 移动端减小最小高度 */
+        .image-box {
+          min-height: 300px;
+        }
       }
       .navepad h2 {
         color: #8fbc8f; /* 将颜色替换为你想要的青色或绿色，例如暗海绿 */
@@ -115,14 +111,6 @@
             ><img src="./img/L12.jpg" alt="茶·韵·珐·华" style="height: 50px" />
           </a>
 
-          <!-- <button
-            class="bg-white canvasbu order-lg-last ms-auto"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasLeft"
-            aria-controls="offcanvasLeft"
-          >
-            <i class="bx bx-cart-alt"></i><span> Cart</span>
-          </button> -->
           <button
             class="navbar-toggler ms-3 me-3"
             type="button"
@@ -204,13 +192,20 @@
       </div>
     </header>
 
-    <!-- 第1个区域 -->
-    <!-- <section id="chahu" class="section-block pt-5 pb-4"> -->
     <section id="chahu" class="section-block">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-6">
-            <img src="img/微信图片_20250605202940.jpg" alt="Ceramic Vase" class="image-box" />
+            <model-viewer
+              src="models/chahu1.glb"
+              alt="“听泉注” 茶壶 - 3D 模型"
+              class="image-box"
+              camera-controls
+              auto-rotate
+              ar
+              shadow-intensity="1"
+              rotation-per-second="25deg"
+            ></model-viewer>
           </div>
           <div class="col-md-6 text-box">
             <h2>“听泉注” 茶壶</h2>
@@ -222,12 +217,20 @@
       </div>
     </section>
 
-    <!-- 第2个区域 -->
     <section id="chabei" class="section-block">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-6">
-            <img src="img/微信图片_20250605202956.jpg" alt="Porcelain Plate" class="image-box" />
+            <model-viewer
+              src="models/chabei1.glb"
+              alt="“春冰薄”茶杯 - 3D 模型"
+              class="image-box"
+              camera-controls
+              auto-rotate
+              ar
+              shadow-intensity="1"
+              rotation-per-second="25deg"
+            ></model-viewer>
           </div>
           <div class="col-md-6 text-box">
             <h2>“春冰薄”茶杯</h2>
@@ -239,7 +242,6 @@
       </div>
     </section>
 
-    <!-- 第3个区域 -->
     <section id="beidian" class="section-block">
       <div class="container">
         <div class="row align-items-center">
@@ -260,7 +262,6 @@
       </div>
     </section>
 
-    <!-- 第4个区域 -->
     <section id="diaozhui" class="section-block">
       <div class="container">
         <div class="row align-items-center">
@@ -281,7 +282,6 @@
       </div>
     </section>
 
-    <!-- 第5个区域 -->
     <section id="xianglian" class="section-block">
       <div class="container">
         <div class="row align-items-center">
@@ -302,7 +302,6 @@
       </div>
     </section>
 
-    <!-- 第6个区域 -->
     <section id="erhuan" class="section-block">
       <div class="container">
         <div class="row align-items-center">
@@ -323,35 +322,6 @@
       </div>
     </section>
 
-    <!-- <div class="bg5 py-5 my-5">
-      <div class="container mt-5">
-        <div class="col-lg-5 my-5">
-          <p class="red">了解更多</p>
-          <h1>了解更多</h1>
-          <p>
-            这里还没写不知道写什么
-            <span class="text-decoration-underline me-5" style="color: #ac1313"
-              >同理</span
-            >
-            Suspendisse varius enim in eros elementum.
-          </p>
-
-          <a class="btn btn-danger rounded-0 p-3 mb-4" href="ShopePage.html">
-            更多，有点保留了之前的页面，un</a
-          >
-          <a href="#">
-            <img
-              src="img//5bc26c68ca643a35ff2e403f_scott-webb-268893-unsplash (1).jpg"
-              class="img-fluid"
-              width=" 40"
-            />
-          </a>
-          
-        </div>
-        
-
-      </div>
-    </div> -->
     <div
       class="mx-auto text-center py-4"
       style="
